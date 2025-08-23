@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* ----------------------------
+   1. Custom Fonts
+----------------------------- */
+@font-face {
+  font-family: "mtavruli";
+  src: url("fonts/bpg_mrgvlovani_2010.woff2") format("woff2"),
+       url("fonts/bpg_mrgvlovani_2010.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bpg_banner";
+  src: url("fonts/bpg_mrgvlovani_caps_2010.woff2") format("woff2"),
+       url("fonts/bpg_mrgvlovani_caps_2010.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ----------------------------
+   2. Reset
+----------------------------- */
+
+/* Universal box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Core body defaults */
+html, body {
+  height: 100%;
+  font-family: "mtavruli", "Sylfaen", "Noto Sans Georgian", "DejaVu Sans", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* smooth text on macOS */
+  -moz-osx-font-smoothing: grayscale; /* smooth text on Firefox macOS */
+  background-color: #fff; /* safe default background */
+  color: #000; /* safe default text */
+}
+
+/* Headings reset (but keep hierarchy) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* Lists reset */
+ul, ol {
+  list-style: none;
+}
+
+/* Media reset */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements reset */
+button, input, textarea, select {
+  font: inherit;
+  margin: 0;
+}
+
+/* Keep focus outlines for accessibility */
+:focus {
+  outline: 2px solid #0078D7; /* Windows blue style */
+  outline-offset: 2px;
+}
+
+/* ----------------------------
+   3. Custom Font Usage
+----------------------------- */
+
+/* General body text in mtavruli */
+body {
+  font-family: "mtavruli", "Sylfaen", "Noto Sans Georgian", "DejaVu Sans", sans-serif;
+}
+
+/* Headings in bpg_banner */
+h1, h2, h3 {
+  font-family: "bpg_banner", "Sylfaen", "Noto Sans Georgian", "DejaVu Sans", sans-serif;
+  font-weight: normal;
+}
+body { line-height: 1.4; }
+nav ul { list-style: none; }
+li { list-style: none; }
